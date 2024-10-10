@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [ProfileEditorComponent],
+  template: '<app-profile-editor></app-profile-editor>',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'curso-angular';

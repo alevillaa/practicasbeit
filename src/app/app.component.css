@@ -1,0 +1,13 @@
+div {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+input {
+    font-size: 1.1em;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}

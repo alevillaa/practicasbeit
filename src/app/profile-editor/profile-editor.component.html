@@ -1,0 +1,25 @@
+<p>profile-editor works!</p>
+<div>
+    <form [formGroup]="trabajo1Form">
+        <div class="abc">
+            <label for="d_alfanum">Datos Alfanumericos con caracteres</label>
+            <input type="text" placeholder="ingresé solo datos alfanumericos o caracteres especiales" formControlName="datosalfanumconC" />
+            <div class="warning"  *ngIf="trabajo1Form.get('datosalfanumconC')?.errors && trabajo1Form.get('datosalfanumconC')?.touched"><small>Solo datos alfanumericos o caracteres</small></div>
+        </div>
+        <div class="abc">
+            <label for="d_alfanum">Numericos</label>
+            <input type="text" placeholder="ingresé un numero" formControlName="numericos"/>
+            <div class="warning" *ngIf="trabajo1Form.get('numericos')?.errors && trabajo1Form.get('numericos')?.touched"><small>Solo numeros</small></div>
+        </div>
+        <div class="abc">
+            <label for="d_alfanum">Telefonico</label>
+            <input type="text" placeholder="ingresé un numero" formControlName="telefonico"/>
+            <div class="warning" *ngIf="trabajo1Form.get('telefonico')?.errors && trabajo1Form.get('telefonico')?.touched"><small>Solo datos telefonicos</small></div>
+        </div>
+        <div class="abc">
+            <label for="d_alfanum">Datos Alfanumericos</label>
+            <input type="text" placeholder="ingresé solo datos alfanumericos" formControlName="datosalfanum"/>
+            <div class="warning" *ngIf="trabajo1Form.get('datosalfanum')?.errors && trabajo1Form.get('datosalfanum')?.touched"><small>Solo datos alfanumericos</small></div>
+        </div>
+    </form>
+</div>
